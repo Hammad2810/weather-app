@@ -36,7 +36,7 @@ const WeatherApp: React.FC = () => {
         name: data.name,
       });
       setCity(data.name);
-    } catch (err) {
+    } catch (error) {
       setError("Failed to fetch weather data");
     } finally {
       setLoading(false);
@@ -62,7 +62,7 @@ const WeatherApp: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center p-6 text-white" style={{ backgroundImage: `url(${bgImage})` }}> 
-      <div> MindStack Solutions : Assessment 1 </div>     
+      <div> MindStack Solutions : Assessment - 1 </div>     
       <div className="bg-transparent bg-opacity-90 shadow-2xl rounded-3xl p-8 w-full max-w-md text-center text-gray-900">
         <h1 className="text-4xl text-white font-bold mb-4">🌎 Weather App</h1>
         <input
